@@ -1,89 +1,597 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.1.2/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.1.2/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+  <title>Holy Ideas Production</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/custom_img/logo.png" rel="icon">
+  <link href="assets/img/custom_img/logo-light.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Bocor - v2.1.0
+  * Template URL: https://bootstrapmade.com/bocor-bootstrap-template-nice-animation/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero">
+    <header id="header">
+      <div class="container d-flex align-items-center">
+  
+        <div class="logo mr-auto">
+          <!-- <h1 class="text-light"><a href="index.html">Bocor<span>.</span></a></h1> -->
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <a href="index.html"><img src="assets/img/custom_img/logo-light.png" alt="" class="img-fluid"></a>
+        </div>
+  
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li><a href="#services"> SERVICES</a></li>
+            
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#team">TEAM</a></li>
+            
+  
+            <li ><a href="#contact">CONTACT US</a></li>
+          </ul>
+        </nav><!-- .nav-menu -->
+  
+      </div>
+    </header><!-- End Header -->
+
+    <div class="container align-self-end">
+      <div class="row ">
+      <div class=" col-lg-12 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
+        <div style="margin-top: 100px;">
+            <h1 >GO</h1>
+            <h1>GLOBAL</h1>
+            <h1>DIGITALLY</h1>
+        </div>
+        
+        <div  class="text-center" > 
+          <a href="#contact" class="btn btn-outline-light rounded-50 scrollto" style="border-radius: 30px">Contact Us </a>
+      </div>
+      </div>
+      <!-- <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
+        <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+      </div> -->
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    </div>
+    
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  </div><!-- End Hero -->
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+  <main id="main">
+
+    <!-- ======= Clients Section ======= -->
+    
+
+    <!-- End Clients Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg" >
+      <div class="container" style="margin-top: 20px;">
+
+        <div class="row">
+          <!-- <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div> -->
+          <div class="col-xl-12 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3 data-aos="fade-in" data-aos-delay="100">ALL  ABOUT  US</h3>
+              <p data-aos="fade-in">
+                India is taking a digital leap. By many measures India is on its way of becoming a digitally advanced country and
+                we at Holy Ideas Production helps our clients in this ever growing digital india by offering gamut of services at
+                affordable rates. We are bunch of engineers bringing
+              </p>
+              <!-- <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="bx bx-receipt"></i>
+                  <h4><a href="#">Corporis voluptates sit</a></h4>
+                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4><a href="#">Ullamco laboris nisi</a></h4>
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bx bx-images"></i>
+                  <h4><a href="#">Labore consequatur</a></h4>
+                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-shield"></i>
+                  <h4><a href="#">Beatae veritatis</a></h4>
+                  <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                </div>
+              </div> -->
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Services</h2>
+          <!--  -->
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+            <img src="assets/img/custom_svg/SVGs-04.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+            <h3 style="font-weight: bold;">FILMS &
+              VIDEO</h3>
+              <div style="font-size: 25px;" >
+                <span class="font-italic" >Short Films</span><br>
+                <span class="font-italic">Web Series</span><br>
+                <span class="font-italic">B Roll Videos</span><br>
+                <span class="font-italic">Promo Videos</span><br>
+                <span class="font-italic">AD Films/ TVCs</span><br>
+                <span class="font-italic">Product Videos</span><br>
+                <span class="font-italic">Corspanorate Films</span><br>
+                <span class="font-italic">2D/3D Animation</span><br>
+                <span class="font-italic">Stop motion Animation</span><br>
+                <span class="font-italic">Wedding & Pre Wedding Films</span><br>
+           
+              </div>
+            
+          </div>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5 order-1 order-md-1" data-aos="fade-right">
+            <img src="assets/img/custom_svg/SVGs-05.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-4 text-right order-2 order-md-2" data-aos="fade-left" style="margin-top: 40px;">
+            <h3 style="font-weight: bold;">PHOTO</h3>
+            <div style="font-size: 25px;" >
+              <span class="font-italic" >Food</span><br>
+              <span class="font-italic">Event</span><br>
+              <span class="font-italic">Fashion</span><br>
+              <span class="font-italic">Product</span><br>
+              <span class="font-italic">Wedding</span><br>
+              <span class="font-italic">Maternity</span><br>
+                       
+            </div>
+          </div>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+            <img src="assets/img/custom_svg/SVGs-03.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+            <h3 style="font-weight: bold;">AUDIO</h3>
+              <div style="font-size: 25px;" >
+                <span class="font-italic" >Songs</span><br>
+                <span class="font-italic">Jingles</span><br>
+                <span class="font-italic">Poadcasts</span><br>
+                <span class="font-italic">Background Scores</span><br>
+                <span class="font-italic">Voice over & Dubbing</span><br>
+                <span class="font-italic">Customised Caller Tunes</span><br>
+                <span class="font-italic">Audio Ads (Radio Commercials)</span><br>
+               
+           
+              </div>
+          </div>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5 order-1 order-md-1" data-aos="fade-right">
+            <img src="assets/img/custom_svg/SVGs-02.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-4 text-right order-1 order-md-2" data-aos="fade-left">
+            <h3 style="font-weight: bold;">GRAPHICS & BRANDING</h3>
+              <div style="font-size: 25px;" >
+                <span class="font-italic" >Logo</span><br>
+                <span class="font-italic">Standee</span><br>
+                <span class="font-italic">Brochure</span><br>
+                <span class="font-italic">Stationary</span><br>
+                <span class="font-italic">Marchandise</span><br>
+                <span class="font-italic">Motion Graphics</span><br>
+                <span class="font-italic">Social Media Flyers</span><br>
+                <span class="font-italic">Banners/ Billboards</span><br>
+                           
+              </div>
+          </div>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+            <img src="assets/img/custom_svg/SVGs-01.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+            <h3 style="font-weight: bold;">WEB & APP DEVELOPMENT</h3>
+              <div style="font-size: 25px;" >
+                <span class="font-italic" >UX/UI Design</span><br>
+                <span class="font-italic">Web/App Design</span><br>
+                
+                <span class="font-italic">Web/App Development</span><br>
+                <span class="font-italic">SEO & Lead generation</span><br>
+                
+                           
+              </div>
+          </div>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5 order-1 order-md-1" data-aos="fade-right">
+            <img src="assets/img/custom_svg/SVGs-06.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-4 text-right order-1 order-md-2" data-aos="fade-left">
+            <h3 style="font-weight: bold;">AUGMENTED &
+              VIRTUAL REALITY</h3>
+              <div style="font-size: 25px;" >
+                <span class="font-italic" >VR Development</span><br>
+                <span class="font-italic">Image Target Augmentation</span><br>
+                
+                <span class="font-italic">Ground Plane Augmentation</span><br>
+                <span class="font-italic">Fully Interactive Developmet</span><br>
+                
+                           
+              </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features section-bg">
+      
+    </section><!-- End Features Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Portfolio</h2>
+          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Films</li>
+              <li data-filter=".filter-card">Graphic</li>
+              <!-- <li data-filter=".filter-web">Logo</li> -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div>
+              <!-- <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""> -->
+              <iframe width="350" height="auto" src="https://www.youtube.com/embed/Mm7lM8GVE5Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div >
+              <!-- <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""> -->
+              <iframe width="350" height="auto" src="https://www.youtube.com/embed/Qh5WcYRrnEE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div >
+              <!-- <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""> -->
+              <iframe width="350" height="auto" src="https://www.youtube.com/embed/THj81MX6n1U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/custom_img/Logo1.png" class="img-fluid" alt="">
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/custom_img/Logo2.png" class="img-fluid" alt="">
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/custom_img/logo3.png" class="img-fluid" alt="">
+              
+            </div>
+          </div>
+
+       
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" >
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Team</h2>
+          <!-- <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+        <div class="row" style="justify-content: space-around; margin-top: -30px;">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in">
+              <div class="pic"><img src="assets/img/team/TEAM/kanabar.png" alt=""></div>
+              <div class="team-name">
+                <h4>HARSHIL</h4>
+                <span>Director</span>
+                <span>Script Writer</span>
+              </div>
+             
+              <!-- <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/team/TEAM/sidd.png" alt=""></div>
+              <div class="team-name">
+                <h4>SIDDHARTH</h4>
+              <span>Designer</span>
+              <span>Cinematographer</span>
+              </div>
+              
+              <!-- <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img  style="max-width: 60%; margin-top: 50px;" src="assets/img/team/krishna2.png" alt=""></div>
+              <div style="margin-top: -50px;" >
+                <h4>KRISHNA</h4>
+              <span>Editor</span>
+              <span>Developer</span>
+              </div>
+              
+              <!-- <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+          
+
+      </div>
+
+      <div class="container">
+
+        
+        <div class="row" style="justify-content: space-around; margin-top: -35px;">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/team/TEAM/Kiran.png" alt=""></div>
+              <div class="team-name">
+                <h4>KIRAN</h4>
+                <span>Developer</span>
+              </div>
+             
+              <!-- <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/team/TEAM/Ankur.png" alt=""></div>
+              <div class="team-name">
+                <h4>ANKUR</h4>
+              <span>Marketing Manager</span>
+              </div>
+              
+              <!-- <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+          
+
+      </div>
+    </section><!-- End Team Section -->
+
+   <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Contact</h2>
+          <!-- <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 order-2 ">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box" data-aos="fade-up">
+                  
+                  <h2>ARE YOU AN</h2>
+                    <h2>ARTIST!</h2>
+                  <a href="http://gg.gg/registerholyidea" target="_blank"> Register Here !</a>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="info-box" data-aos="fade-up"> 
+                  <i class="bx bx-phone-call"></i><span>9099274175</span><br>
+                  <i class="bx  bx-envelope"></i><span>holyideasproduction@gmail.com</span>
+
+                  <div class="social-links" style="margin-top: 10px;">
+                    <a href="https://mobile.twitter.com/HolyIdeas" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.facebook.com/holyideas_production-108181237635675/" target="_blank"   class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UCaon5KhI2NhqbMZZjP9lZLA"  target="_blank" class="youtube"><i class="bx bxl-youtube"></i></a>
+                    <a href="https://www.instagram.com/holyideas_production"  target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                  </div>
+                </div>
+               
+              </div>
+              
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 order-1 ">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form" data-aos="fade-up">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="contact" id="contact" placeholder="Contact" data-rule="minlen:4" data-msg="Please enter a valid contact no" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="dedcription" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Dedcription"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Get In Touch</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h3>Holy ideas production</h3>
+          </div>
+        </div>
+
+        <!-- <div class="row footer-newsletter justify-content-center">
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email" placeholder="Enter your Email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div> -->
+
+        
+
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Holyideasproduction</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bocor-bootstrap-template-nice-animation/ -->
+        
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
